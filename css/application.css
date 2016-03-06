@@ -1,3 +1,27 @@
+.wrapper {
+  margin: 30px; }
 
+.row {
+  border: 1px solid red;
+  height: 100px;
+  width: 300px;
+  display: flex; }
+
+.box {
+  border: 1px solid lime;
+  height: 100px;
+  width: 100px; }
+
+.circles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: tomato;
+  margin: 20px; }
 
 /*# sourceMappingURL=application.css.map */

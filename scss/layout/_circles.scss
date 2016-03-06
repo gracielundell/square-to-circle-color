@@ -1,0 +1,13 @@
+.circles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.circle {
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background: tomato;
+  margin: 20px;
+}

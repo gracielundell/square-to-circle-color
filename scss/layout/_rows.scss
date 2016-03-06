@@ -1,0 +1,17 @@
+.wrapper {
+  margin: 30px;
+}
+
+.row {
+  border: 1px solid red;
+  height: 100px;
+  width: 300px;
+
+  display: flex;
+}
+
+.box {
+  border: 1px solid lime;
+  height: 100px;
+  width: 100px;
+}
