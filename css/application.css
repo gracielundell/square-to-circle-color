@@ -1,11 +1,18 @@
+.box, .circle {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .wrapper {
   margin: 30px;
-  display: flex; }
+  display: flex;
+  width: 450px; }
 
 .box {
   border: 1px solid lime;
-  height: 100px;
-  width: 100px; }
+  height: 150px;
+  width: 150px;
+  background-image: url("../img/dirt.png"); }
 
 .circles {
   margin: 20px;
@@ -14,10 +21,13 @@
   flex-wrap: wrap; }
 
 .circle {
-  height: 90px;
-  width: 90px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
   margin: 10px;
   border: 1px solid orange; }
+
+.selected {
+  border: 5px solid orange; }
 
 /*# sourceMappingURL=application.css.map */

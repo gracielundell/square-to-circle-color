@@ -6,9 +6,15 @@
 }
 
 .circle {
-  height: 90px;
-  width: 90px;
+  height: 140px;
+  width: 140px;
   border-radius: 50%;
   margin: 10px;
   border: 1px solid orange;
+
+  @extend %setBackgroundStyle;
+}
+
+.selected {
+  border: 5px solid orange;
 }

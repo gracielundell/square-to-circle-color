@@ -1,39 +1,44 @@
-var squareColor = "red";
+var squareImg = "red";
 
 var circleArray = [
   {
-    color: "darkkhaki"
+    imgSource: "carrot.png"
   },
   {
-    color: "aqua"
+    imgSource: "flower.png"
   },
   {
-    color: "green"
+    imgSource: "tomato.png"
+  },
+  {
+    imgSource: "dirt.png"
   }
 ];
 
+// set img for circles
 function createCircleDiv(circle) {
-  return "<div class='circle' style='background:" + circle.color + "'></div>"
+  return "<div class='circle' style='background-image:" + "url(\"img/" + circle.imgSource + "\")'></div>"
 };
 
+// create circles
 $(document).ready(function() {
   circleArray.forEach(function(circle) {
     var circleDiv = createCircleDiv(circle);
     $(".circles").append(circleDiv);
   });
 
-// set orig square color
+  // set square's background img
   $(".wrapper").click(function(event) {
-    console.log(event.target);
-    $(event.target).css("background", squareColor);
+    $(event.target).css("background-image", squareImg);
   });
 
-
-// set square color to circle color
+  // set squareImg to circle's img
   $(".circle").click(function(event) {
-    console.log(event.target);
-    squareColor = $(event.target).css("background");
-
+    // remove selector when new circle is clicked on
+    $('.circle').removeClass("selected")
+    
+    squareImg = $(event.target).css("background-image");
+    $(event.target).addClass("selected");
   });
 
 });

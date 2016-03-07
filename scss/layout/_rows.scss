@@ -1,10 +1,14 @@
 .wrapper {
   margin: 30px;
   display: flex;
+  width: 450px;
 }
 
 .box {
   border: 1px solid lime;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
+  background-image: url("../img/dirt.png");
+
+  @extend %setBackgroundStyle;
 }
