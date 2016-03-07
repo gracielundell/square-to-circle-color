@@ -1,4 +1,5 @@
 .circles {
+  margin: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -8,6 +9,6 @@
   height: 90px;
   width: 90px;
   border-radius: 50%;
-  background: tomato;
-  margin: 20px;
+  margin: 10px;
+  border: 1px solid orange;
 }
